@@ -90,4 +90,4 @@ netflixQueue.addMovie("Black Swan");
 console.log("Printing movie queue!\n");
 netflixQueue.printQueue();
 
-console.log(netflixQueue.queue)
+
