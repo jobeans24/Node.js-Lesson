@@ -12,18 +12,18 @@ var person = {
   }
 };
 
-person.saySomething(); // prints "Hodor is thinking..."
+//person.saySomething(); // prints "Hodor is thinking..."
 // prints "undefined!" 100ms later
 
 // Arrow functions bind the `this` keyword to the object it's created inside of
 // i.e. whatever `this` is where it's created
-var person = {
-  name: "Hodor",
-  saySomething: function() {
-    console.log(this.name + " is thinking...");
-    setTimeout(() => console.log(this.name + "!"), 100);
-  }
-};
+//var person = {
+  //name: "Hodor",
+  //saySomething: function() {
+    //console.log(this.name + " is thinking...");
+    //setTimeout(() => console.log(this.name + "!"), 100);
+  //}
+//};
 
-person.saySomething(); // "Prints Hodor is thinking..."
+//person.saySomething(); // "Prints Hodor is thinking..."
 // prints `Hodor!` 100ms later
