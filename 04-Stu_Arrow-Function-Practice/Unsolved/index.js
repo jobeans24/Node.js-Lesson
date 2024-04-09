@@ -75,6 +75,7 @@ var netflixQueue = {
       var currentMovie = this.queue[i];
       list += (this.queue.length - i) + ". " + currentMovie + "\n";
     }
+    console.log(list);
   }
 };
 
@@ -88,3 +89,5 @@ console.log("\nAdding a movie!\n");
 netflixQueue.addMovie("Black Swan");
 console.log("Printing movie queue!\n");
 netflixQueue.printQueue();
+
+console.log(netflixQueue.queue)
