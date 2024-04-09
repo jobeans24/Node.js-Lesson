@@ -57,25 +57,24 @@ console.log(evenNumbers);
 
 // 4. netflixQueue is an object for managing your netflix queue
 var netflixQueue = {
-  queue: [
+  queue:  [
     "Mr. Nobody",
     "The Matrix",
     "Eternal Sunshine of the Spotless Mind",
     "Fight Club"
   ],
-  watchMovie: () => {
+  watchMovie: function()  {
     this.queue.pop();
   },
-  addMovie: (movie) => {
+  addMovie: (movie) =>  {
     this.queue.unshift(movie);
   },
-  printQueue: () => {
+  printQueue: function() {
     var list = "";
     for (var i = this.queue.length - 1; i >= 0; i--) {
       var currentMovie = this.queue[i];
       list += (this.queue.length - i) + ". " + currentMovie + "\n";
     }
-    console.log(list);
   }
 };
 
