@@ -66,7 +66,7 @@ var netflixQueue = {
   watchMovie: function()  {
     this.queue.pop();
   },
-  addMovie: (movie) =>  {
+  addMovie: function(movie)  {
     this.queue.unshift(movie);
   },
   printQueue: function() {
