@@ -3,7 +3,7 @@ const addGreetingMessage = (name) => {
   var message = 'How are you?';
 
   if (name.length > 0) {
-    var message = 'Hello ' + name;
+    message = 'Hello ' + name;
     console.log(message);
   }
 
@@ -14,11 +14,11 @@ addGreetingMessage('Tammy');
 
 // TODO: Fix the declarations so that the function works properly.
 const calloutCounter = () => {
-  const callout = 'Outside of the loop';
+  let callout = 'Outside of the loop';
   var counter = 5;
 
   while (counter > 0) {
-    var callout = 'Inside the loop';
+    callout = 'Inside the loop';
     console.log(counter, callout);
     counter--;
   }
