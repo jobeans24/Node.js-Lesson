@@ -13,9 +13,10 @@ const addGreetingMessage = (name) => {
 addGreetingMessage('Tammy');
 
 // TODO: Fix the declarations so that the function works properly.
+
 const calloutCounter = () => {
   let callout = 'Outside of the loop';
-  var counter = 5;
+  let counter = 5;
 
   while (counter > 0) {
     callout = 'Inside the loop';
